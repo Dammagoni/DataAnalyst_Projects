@@ -39,3 +39,5 @@ SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON trans
 # Data Analysis Using Power BI
 Formula to create norm_amount column
 = Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)
+# old_dataset
+using old dataset I have done the salesInsights old dashboard  after the feedback from stake hholder I have added few more rcolumns in data which I have extracted and then I have improved my dashboard according to his needs.
